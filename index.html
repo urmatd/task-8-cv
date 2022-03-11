@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV-Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="site">
+          <div>
+            <p class="name">Urmat Dubanaev</p>
+          </div>
+        </div>
+        <nav class="nav">
+          <ul>
+            <li class="header-menu-item">
+              <a href="#home" class="header-menu-link nav-name">Home</a>
+            </li>
+            <li class="header-menu-item">
+              <a href="#skills" class="header-menu-link nav-name">Skills</a>
+            </li>
+            <li class="header-menu-item">
+              <a href="#portfolio" class="header-menu-link nav-name"
+                >Portfolio</a
+              >
+            </li>
+            <li class="header-menu-item nav-name">
+              <a href="#languages" class="header-menu-link nav-name"
+                >Languages</a
+              >
+            </li>
+            <li class="header-menu-item">
+              <a href="#education" class="header-menu-link nav-name"
+                >Education</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <button type="button" class="nav-button" onClick="navFunc()">
+          <span class="sr-only">MENU</span>
+        </button>
+      </div>
+    </header>
+    <section class="intro">
+      <div class="container">
+        <div class="intro-inner">
+          <div class="intro-left">
+            <img
+              class="intro-img"
+              src="./img/cv-foto.png"
+              alt="urmat's photo"
+            />
+          </div>
+
+          <div class="intro-right">
+            <h1>Urmat Dubanaev</h1>
+            <h3>Front-end Developer</h3>
+            <p>
+              I've had some code writing experience last year. But I failed. In
+              this time I want to study course till the end. That's why I will
+              try to focus on my health, and my daily routine. And I'll give my
+              energy for learning all that stuff that's needed in Front-end
+              development.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contacts">
+      <div class="container">
+        <h2 class="section-title">Contacts</h2>
+        <ul>
+          <li>
+            <h4>Location</h4>
+            <p>Bishkek, Kyrgyztan</p>
+          </li>
+          <li>
+            <h4>Phone</h4>
+            <a href="tel:+996770362492">+996 770 36 24 92</a>
+          </li>
+          <li>
+            <h4>E-mail</h4>
+            <a href="mailto:urmatd@gmail.com">urmatd@gmail.com</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="message skills section" id="skills">
+      <div class="container">
+        <h2>Skills</h2>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Sass</li>
+          <li>JS</li>
+          <li>Git, GitHub</li>
+          <li>Figma</li>
+        </ul>
+      </div>
+    </section>
+    <section class="service" id="portfolio">
+      <div class="container">
+        <h2>Portfolio</h2>
+        <div class="features">
+          <article class="feature office">
+            <figure>
+              <img src="./img/adventure-01.png" alt="" />
+            </figure>
+            <h3>Adventure</h3>
+          </article>
+          <article class="feature manage">
+            <figure>
+              <img src="./img/adventure-02.png" alt="" />
+            </figure>
+            <h3>Features</h3>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="language section" id="languages">
+      <div class="container">
+        <h2 class="section-title">Languages</h2>
+        <ul>
+          <li>Kyrgyz</li>
+          <li>Russian</li>
+          <li>English, А2 level</li>
+        </ul>
+      </div>
+    </section>
+    <section class="education section" id="education">
+      <div class="container">
+        <h2 class="section-title">Education</h2>
+        <ul>
+          <li>Osh Technological University, management</li>
+        </ul>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="info">
+          <p>
+            Urmat Dubanaev
+            <a href="https://github.com/urmatd?tab=repositories">
+              my GitHub account</a
+            >
+          </p>
+          <p>
+            2022 &copy;
+            <a href="https://linktr.ee/jyldyzacademy2020">JyldyzAcademy</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script>
+      function navFunc() {
+        document.querySelector("html").classList.toggle("open");
+      }
+    </script>
+  </body>
+</html>
